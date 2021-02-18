@@ -1,5 +1,5 @@
 
-workesHour = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am']
+let workesHour = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am'];
 
 function random(minCookie, maxCookies) {
     return Math.floor(Math.random() * (maxCookies - minCookie + 1) + minCookie);
@@ -25,13 +25,13 @@ function city1() {
         },
 
         calcCookiesPerHour: function () {
-            
-            for (let k = 0; k < workesHour.length; k++){
+
+            for (let k = 0; k < workesHour.length; k++) {
                 this.cookiesPerHour.push(Math.floor(this.custumersPerHour[k] * this.avgCookie));
-                 this.total += this.calcCookiesPerHour;
-            
-            } 
-            
+                this.total += this.cookiesPerHour[k];
+
+            }
+
         },
         render: function () {
 
@@ -57,7 +57,7 @@ function city1() {
 
                 unorderedList.appendChild(listItem);
 
-                listItem.textContent = `${workesHour[j]}: ${this.cookiesEachHour} cookies`
+                listItem.textContent = `${workesHour[j]}: ${this.cookiesPerHour[j]} cookies`
             }
 
 
@@ -84,17 +84,21 @@ function city2() {
         total: 0,
 
         calcCustumersPerHour: function () {
-            for (let i = 0; i < workesHour.length; i++) {
+            for (let b = 0; b < workesHour.length; b++) {
                 this.custumersPerHour.push(random(this.minCookie, this.maxCookies));
+
 
 
             }
         },
 
         calcCookiesPerHour: function () {
-            for (let k = 0; k < workesHour; k++)
+
+            for (let k = 0; k < workesHour.length; k++) {
                 this.cookiesPerHour.push(Math.floor(this.custumersPerHour[k] * this.avgCookie));
-            this.total += this.cookiesPerHour[k]
+                this.total += this.cookiesPerHour[k];
+
+            }
 
         },
         render: function () {
@@ -121,8 +125,10 @@ function city2() {
 
                 unorderedList.appendChild(listItem);
 
-                listItem.textContent = `${workesHour[j]}: ${this.cookiesEachHour} cookies`
+                listItem.textContent = `${workesHour[j]}: ${this.cookiesPerHour[j]} cookies`
             }
+
+
 
 
         }
@@ -146,17 +152,21 @@ function city3() {
         total: 0,
 
         calcCustumersPerHour: function () {
-            for (let i = 0; i < workesHour.length; i++) {
+            for (let b = 0; b < workesHour.length; b++) {
                 this.custumersPerHour.push(random(this.minCookie, this.maxCookies));
+
 
 
             }
         },
 
         calcCookiesPerHour: function () {
-            for (let i = 0; i < workesHour; i++)
-                this.cookiesPerHour.push(Math.floor(this.custumersPerHour[i] * this.avgCookie));
-            this.total += this.cookiesPerHour
+
+            for (let k = 0; k < workesHour.length; k++) {
+                this.cookiesPerHour.push(Math.floor(this.custumersPerHour[k] * this.avgCookie));
+                this.total += this.cookiesPerHour[k];
+
+            }
 
         },
         render: function () {
@@ -183,7 +193,7 @@ function city3() {
 
                 unorderedList.appendChild(listItem);
 
-                listItem.textContent = `${workesHour[j]}: ${this.cookiesEachHour} cookies`
+                listItem.textContent = `${workesHour[j]}: ${this.cookiesPerHour[j]} cookies`
             }
 
 
@@ -216,10 +226,22 @@ function city4() {
             }
         },
 
+        calcCustumersPerHour: function () {
+            for (let b = 0; b < workesHour.length; b++) {
+                this.custumersPerHour.push(random(this.minCookie, this.maxCookies));
+
+
+
+            }
+        },
+
         calcCookiesPerHour: function () {
-            for (let i = 0; i < workesHour; i++)
-                this.cookiesPerHour.push(Math.floor(this.custumersPerHour[i] * this.avgCookie));
-            this.total += this.cookiesPerHour
+
+            for (let k = 0; k < workesHour.length; k++) {
+                this.cookiesPerHour.push(Math.floor(this.custumersPerHour[k] * this.avgCookie));
+                this.total += this.cookiesPerHour[k];
+
+            }
 
         },
         render: function () {
@@ -246,14 +268,13 @@ function city4() {
 
                 unorderedList.appendChild(listItem);
 
-                listItem.textContent = `${workesHour[j]}: ${this.cookiesEachHour} cookies`
+                listItem.textContent = `${workesHour[j]}: ${this.cookiesPerHour[j]} cookies`
             }
 
 
 
 
         }
-
 
     }
     paris.calcCustumersPerHour();
@@ -273,17 +294,21 @@ function city5() {
         total: 0,
 
         calcCustumersPerHour: function () {
-            for (let i = 0; i < workesHour.length; i++) {
+            for (let b = 0; b < workesHour.length; b++) {
                 this.custumersPerHour.push(random(this.minCookie, this.maxCookies));
+
 
 
             }
         },
 
         calcCookiesPerHour: function () {
-            for (let i = 0; i < workesHour; i++)
-                this.cookiesPerHour.push(Math.floor(this.custumersPerHour[i] * this.avgCookie));
-            this.total += this.cookiesPerHour
+
+            for (let k = 0; k < workesHour.length; k++) {
+                this.cookiesPerHour.push(Math.floor(this.custumersPerHour[k] * this.avgCookie));
+                this.total += this.cookiesPerHour[k];
+
+            }
 
         },
         render: function () {
@@ -310,7 +335,7 @@ function city5() {
 
                 unorderedList.appendChild(listItem);
 
-                listItem.textContent = `${workesHour[j]}: ${this.cookiesEachHour} cookies`
+                listItem.textContent = `${workesHour[j]}: ${this.cookiesPerHour[j]} cookies`
             }
 
 
