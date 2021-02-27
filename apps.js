@@ -643,7 +643,7 @@ function addNewBransh(event) {
     parent.textContent = '';
     render_thr();
     for (let i = 0; i < branshs.length; i++) {
-        branshs[i].get_Cust_each_hour();
+        branshs[i].getCustumersPerHour();
         
         branshs[i].getCookiesPerHour();
         branshs[i].render_td();
@@ -656,9 +656,9 @@ function addNewBransh(event) {
 
 render_thr();
 for (let i = 0; i < branshs.length; i++) {
-    branshs[i].get_Cust_each_hour();
-    //console.log(branshs[i]);
-    branshs[i].get_Cookies_sold_each_hour();
+    branshs[i].getCustumersPerHour();
+    
+    branshs[i].getCookiesPerHour();
     branshs[i].render_td();
 }
 
