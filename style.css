@@ -1,4 +1,91 @@
-table, th, td {
+table,th,td{
     border: 1px solid black;
+    padding: 10px;
+    margin: 50px;
+}
 
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 127, 48);
+    
+}
+header{
+    background-color: rgb(122, 72, 38);
+   
+    display: block;
+}
+nav ul li{
+    position: relative;
+    margin: auto;
+    height: 30px;
+    width: 90px;
+    list-style: none;
+    float: right;
+    
+   padding: 30px;
+   font-size: 30px;
+   bottom: 50px;
+   font-family: 'RocknRoll One', sans-serif;
+   right: 70px;
+   border-radius: 30px;
+}
+img{
+    height: 100px;
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+    background-color: rgb(122, 72, 38);
+}
+#salmon{
+    position: relative;
+    left: 15px;
+    top: 30px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 54px;
+    background-color: rgb(122, 72, 38);
+}
+p{
+    text-align: center;
+    color: rgb(99, 30, 62);
+    margin-left: auto;
+    margin-right: auto;
+    width: 630px;
+    font-size: 23px;
+   
+    font-family: 'Poppins', sans-serif;
+}
+.p2{
+    float: left;
+    padding: 0 20px 20px 0;
+    position: relative;
+    left: 450px;
+    height: 150px;
+    width: 300px;
+    font-size: 18px;
+    color: rgb(68, 66, 66);
+}
+#image{
+  
+    position: relative;
+    top: 0px;
+    height: 300px;
+    width: 300px;
+}
+footer{
+    padding: 150px;
+    width: 500px;
+}
+.location{
+    list-style: none;
+   color: rgb(57, 51, 94);
+    float: left;
+    font-size: 15px;
+    width: 300px;
+}
+#pat{
+    margin: 30px;
+    font-size: 50px;
+    font-family: 'Reggae One', cursive;
 }
