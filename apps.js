@@ -501,7 +501,7 @@ function Salamon(name, minCookie, maxCookies, avgCookie) {
     this.name = name;
     this.minCookie = minCookie;
     this.maxCookies = maxCookies;
-    this.avgCookie = .avgCookie;
+    this.avgCookie = avgCookie;
     this.custumersPerHour = [];
     this.cookiesPerHour = [];
     this.total = 0;
@@ -509,7 +509,7 @@ function Salamon(name, minCookie, maxCookies, avgCookie) {
 }
 Salamon.prototype.getCustumersPerHour = function () {
 
-    for (let i = 0; i < time.length; i++) {
+    for (let i = 0; i < hours.length; i++) {
         this.custumersPerHour[i] = randomAvg(this.minCookie, this.maxCookies);
         
 
@@ -517,7 +517,7 @@ Salamon.prototype.getCustumersPerHour = function () {
 }
 Salamon.prototype.getCookiesPerHour = function () {
 
-    for (let i = 0; i < time.length; i++) {
+    for (let i = 0; i < hours.length; i++) {
 
         this.cookiesPerHour[i] = Math.floor(this.avgCookie * this.custumersPerHour[i]);
         
