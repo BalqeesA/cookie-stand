@@ -501,7 +501,7 @@ function Salamon(name, minCookie, maxCookies, avgCookie) {
     this.name = name;
     this.minCookie = minCookie;
     this.maxCookies = maxCookies;
-    this.avgCookie = .avgCookie;
+    this.avgCookie = avgCookie;
     this.custumersPerHour = [];
     this.cookiesPerHour = [];
     this.total = 0;
